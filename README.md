@@ -100,5 +100,5 @@ npx vercel --prod
 - `vercel.json` sets security headers (a strict Content-Security-Policy, HSTS, no framing, no sniffing) and caching: one week for `assets/`, one hour for `css/` and `js/`.
 - The Content-Security-Policy allows exactly one inline script by its hash (`document.documentElement.classList.add('js')`). If you change that line in any page, update the hash in `vercel.json`, or the scroll animations will not switch on.
 - `404.html` is served for any missing address.
-- `favicon.svg`, `robots.txt`, and an Open Graph share image (`assets/social-preview.jpg`) are included. Once you know the final address, change each page's `og:image` to the full URL (for example `https://your-domain/assets/social-preview.jpg`), because some sites (LinkedIn, Facebook) only read absolute image URLs.
+- `favicon.svg`, `robots.txt`, `sitemap.xml` and an Open Graph share image (`assets/social-preview.jpg`) are included. Every page points its share image and canonical link at https://ezekeil-cruz.vercel.app; if you move to your own domain, replace that address in the HTML files, `robots.txt` and `sitemap.xml`.
 - `.vercelignore` keeps local tooling (`.claude`, `.taste-skill`) and this README out of the deployment.
