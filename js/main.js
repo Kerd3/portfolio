@@ -77,9 +77,10 @@ function initReveals() {
   document.querySelectorAll(".proof tbody tr").forEach((tr, i) => tr.style.setProperty("--ri", i));
   document.querySelectorAll(".project-hero > *").forEach((el, i) => el.style.setProperty("--i", i));
 
-  const targets = document.querySelectorAll("[data-reveal], .run, .poster-list, .proof, .footer-name, .case-section");
+  const targets = document.querySelectorAll("[data-reveal], .run, .poster-list, .proof, .case-section");
   if (REDUCED || !("IntersectionObserver" in window)) {
     targets.forEach((t) => t.classList.add("is-in"));
+    document.querySelectorAll(".footer-name").forEach((n) => n.classList.add("is-in"));
     document.querySelectorAll("[data-count]").forEach((n) => { n.textContent = n.dataset.count; });
     return;
   }
@@ -92,6 +93,16 @@ function initReveals() {
     });
   }, { threshold: 0.12, rootMargin: "0px 0px -8% 0px" });
   targets.forEach((t) => io.observe(t));
+
+  // The footer name is cropped by its section, so watch the footer itself.
+  document.querySelectorAll(".footer").forEach((footer) => {
+    const name = footer.querySelector(".footer-name");
+    if (!name) return;
+    const fio = new IntersectionObserver(([entry]) => {
+      if (entry.isIntersecting) { name.classList.add("is-in"); fio.disconnect(); }
+    }, { threshold: 0 });
+    fio.observe(footer);
+  });
 }
 
 function countUp(node) {

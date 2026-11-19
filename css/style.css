@@ -430,14 +430,14 @@ pre, code { font-family: var(--code); }
 .footer-links a:hover { color: #8aa6ff; }
 .footer-legal { display: flex; justify-content: space-between; gap: 16px; margin-top: auto; padding-top: 64px; color: var(--dark-muted); font-size: var(--step-small); }
 .footer-name {
-  margin: 0 calc(var(--margin) * -1);
+  margin: 0.1em calc(var(--margin) * -1) 0;
   font-family: var(--display);
   font-size: 30vw;
   line-height: 0.8;
   letter-spacing: -0.02em;
   text-transform: uppercase;
   white-space: nowrap;
-  transform: translateY(22%);
+  transform: translateY(2%);
 }
 
 /* ==========================================================================
@@ -572,8 +572,8 @@ pre, code { font-family: var(--code); }
   .js .proof tbody tr { opacity: 0; transform: translateY(12px); transition: opacity 600ms var(--ease-out), transform 600ms var(--ease-out); transition-delay: calc(var(--ri, 0) * 60ms + 150ms); }
   .js .proof.is-in tbody tr { opacity: 1; transform: none; }
 
-  .js .footer-name { transform: translateY(60%); transition: transform 1200ms var(--ease-out); }
-  .js .footer-name.is-in { transform: translateY(22%); }
+  .js .footer-name { transform: translateY(34%); transition: transform 1200ms var(--ease-out); }
+  .js .footer-name.is-in { transform: translateY(2%); }
 
   .js .case-section { opacity: 0; transform: translateY(24px); transition: opacity 700ms var(--ease-out), transform 700ms var(--ease-out); }
   .js .case-section.is-in { opacity: 1; transform: none; }
