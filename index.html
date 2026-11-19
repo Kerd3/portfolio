@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Ezekeil Third Cruz builds AI applications, Node.js back ends and n8n automations from the Philippines, and proves each one runs.">
+  <meta name="theme-color" content="#ffffff">
+  <title>Ezekeil Third Cruz | AI Applications, Backend and Automation</title>
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml"><meta property="og:type" content="website"><meta property="og:site_name" content="Ezekeil Third Cruz"><meta property="og:title" content="Ezekeil Third Cruz | AI Applications, Backend and Automation"><meta property="og:description" content="Ezekeil Third Cruz builds AI applications, Node.js back ends and n8n automations from the Philippines, and proves each one runs."><meta property="og:image" content="/assets/social-preview.jpg"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><meta name="twitter:card" content="summary_large_image">
+  <script>document.documentElement.classList.add('js')</script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Anton:wght@400&family=Work+Sans:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/main.js" defer></script>
+</head>
+<body class="home">
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header" id="siteHeader">
+    <a class="wordmark" href="#top">Ezekeil Third Cruz</a>
+    <nav class="nav" aria-label="Primary">
+      <a href="#work">Work</a>
+      <a href="#evidence">Evidence</a>
+      <a href="#method">Method</a>
+      <a href="#about">About</a>
+    </nav>
+    <a class="button" href="mailto:ezekielcruz0917@gmail.com?subject=Hello%20Ezekeil">Email me</a>
+    <button class="menu-button" id="menuButton" type="button" aria-expanded="false" aria-controls="menuPanel">Menu</button>
+    <nav class="menu-panel" id="menuPanel" aria-label="Mobile">
+      <a href="#work">Work</a><a href="#evidence">Evidence</a><a href="#method">Method</a><a href="#about">About</a><a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main id="main">
+    <!-- Hero: two fields, the headline sinks into the field where the pipeline runs -->
+    <section class="hero" id="top" data-chapter="light" aria-labelledby="heroTitle">
+      <div class="hero-top" aria-hidden="true"></div>
+      <div class="hero-bottom" data-chapter="dark">
+        <canvas class="hero-canvas" id="heroCanvas" aria-hidden="true"></canvas>
+
+        <div class="runner" id="runner" data-ui>
+          <p class="runner-intro">Run a pipeline from my projects and watch each step hand off to the next.</p>
+          <div class="runner-tabs" role="group" aria-label="Choose a pipeline">
+            <button type="button" class="runner-tab is-active" data-pipeline="support" aria-pressed="true">Support ticket</button>
+            <button type="button" class="runner-tab" data-pipeline="opsdesk" aria-pressed="false">OpsDesk alert</button>
+            <button type="button" class="runner-tab" data-pipeline="evalforge" aria-pressed="false">EvalForge job</button>
+          </div>
+          <ol class="runner-steps" id="runnerSteps">
+            <li>Gmail trigger</li><li>Duplicate check</li><li>AI triage</li><li>Validate output</li><li>Route to team</li><li>Draft reply</li><li>Human approval</li><li>Send and log</li>
+          </ol>
+          <p class="runner-log" id="runnerLog" aria-live="polite">A customer email becomes a triaged, approved reply with an audit trail.</p>
+        </div>
+
+        <p class="hero-sentence">Ezekeil Third Cruz builds AI applications, Node.js back ends and n8n automations from the Philippines, and proves each one runs.</p>
+      </div>
+
+      <h1 class="hero-title" id="heroTitle">
+        <span class="sr-only">Tested, not demoed.</span>
+        <span class="ht ht-top" aria-hidden="true"><span class="line"><span data-line style="--i:0">Tested,</span></span><span class="line"><span data-line style="--i:1">not demoed.</span></span></span>
+        <span class="ht ht-bottom" aria-hidden="true"><span class="line"><span data-line style="--i:0">Tested,</span></span><span class="line"><span data-line style="--i:1">not demoed.</span></span></span>
+      </h1>
+    </section>
+
+    <!-- Featured work: frame runs -->
+    <section class="work" id="work" data-chapter="light" aria-labelledby="workTitle">
+      <h2 class="section-head" id="workTitle" data-reveal>Four builds, up close</h2>
+
+      <article class="run" data-reveal>
+        <div class="run-side">
+          <h3>OpsDesk AI</h3>
+          <p>An IT help desk whose AI assistant answers only from published articles and cites them.</p>
+          <a class="link" href="projects/opsdesk-ai.html">Read the case study</a>
+          <p class="run-note">React 19, Express 5, PostgreSQL 17, Gemini and n8n. 125 API tests and 28 end-to-end tests, all passing.</p>
+        </div>
+        <div class="run-frames" tabindex="0" aria-label="OpsDesk AI screenshots">
+          <figure class="frame is-lifted"><div class="frame-media"><img src="assets/screenshots/opsdesk-ai/10-ai-assistant.png" alt="OpsDesk AI assistant answering with cited knowledge base articles" width="1440" height="900"></div><figcaption><span>Assistant</span><span>Cites its sources</span></figcaption></figure>
+          <figure class="frame"><div class="frame-media"><img src="assets/screenshots/opsdesk-ai/02-admin-dashboard.png" alt="Administrator dashboard with ticket counts and charts" width="1440" height="1481" loading="lazy"></div><figcaption><span>Dashboard</span><span>Computed from SQL</span></figcaption></figure>
+          <figure class="frame"><div class="frame-media"><img src="assets/screenshots/opsdesk-ai/04-ticket-details.png" alt="Ticket details with replies and internal notes" width="1440" height="1122" loading="lazy"></div><figcaption><span>Ticket</span><span>Internal notes stay internal</span></figcaption></figure>
+          <figure class="frame"><div class="frame-media"><img src="assets/screenshots/opsdesk-ai/08-integrations.png" alt="Webhook delivery monitor with retry buttons" width="1440" height="1285" loading="lazy"></div><figcaption><span>Integrations</span><span>Signed webhooks</span></figcaption></figure>
+          <figure class="frame"><div class="frame-media"><img src="assets/screenshots/opsdesk-ai/11-mobile-tickets.png" alt="Ticket list on a phone" width="390" height="844" loading="lazy"></div><figcaption><span>Phone</span><span>390 px</span></figcaption></figure>
+        </div>
+      </article>
+
+      <article class="run" data-reveal>
+        <div class="run-side">
+          <h3>EvalForge</h3>
+          <p>Queued model evaluations you can compare run against run, so a regression shows up as a number.</p>
+          <a class="link" href="projects/evalforge.html">Read the case study</a>
+          <p class="run-note">Express, Redis and BullMQ workers, PostgreSQL, and Mock, Gemini or OpenAI adapters.</p>
+        </div>
+        <div class="run-frames" tabindex="0" aria-label="EvalForge screenshots">
+          <figure class="frame is-lifted"><div class="frame-media"><img src="assets/screenshots/evalforge/run-inspector.jpg" alt="EvalForge run inspector with per-case grades" width="1600" height="776" loading="lazy"></div><figcaption><span>Run inspector</span><span>Graded case by case</span></figcaption></figure>
+          <figure class="frame"><div class="frame-media"><img src="assets/screenshots/evalforge/dashboard-overview.jpg" alt="EvalForge dashboard overview" width="1600" height="775" loading="lazy"></div><figcaption><span>Overview</span><span>Recent runs</span></figcaption></figure>
+          <figure class="frame"><div class="frame-media"><img src="assets/screenshots/evalforge/activity-inspector.jpg" alt="EvalForge activity inspector with execution traces" width="1600" height="769" loading="lazy"></div><figcaption><span>Activity</span><span>Stored traces</span></figcaption></figure>
+          <figure class="frame"><div class="frame-media"><img src="assets/screenshots/evalforge/datasets.jpg" alt="EvalForge dataset management" width="1600" height="771" loading="lazy"></div><figcaption><span>Datasets</span><span>Versioned JSON</span></figcaption></figure>
+          <figure class="frame"><div class="frame-media"><img src="assets/screenshots/evalforge-architecture.svg" alt="EvalForge architecture from dashboard to API, queue, worker, providers, graders and database" width="1200" height="760" loading="lazy"></div><figcaption><span>Architecture</span><span>Queue to graders</span></figcaption></figure>
+        </div>
+      </article>
+
+      <article class="run" data-reveal>
+        <div class="run-side">
+          <h3>DesignHub Studio</h3>
+          <p>A studio website and project workspace built on one token file, with 29 components and both themes.</p>
+          <a class="link" href="projects/designhub.html">Read the case study</a>
+          <p class="run-note">React 19, Tailwind CSS 4, Express and Zod. 84 Playwright tests, 20 API tests, 0 axe violations.</p>
+        </div>
+        <div class="run-frames" tabindex="0" aria-label="DesignHub screenshots">
+          <figure class="frame is-lifted"><div class="frame-media"><img src="assets/screenshots/designhub/dashboard-desktop-1440.png" alt="DesignHub workspace dashboard" width="1440" height="1000" loading="lazy"></div><figcaption><span>Workspace</span><span>Numbers from data</span></figcaption></figure>
+          <figure class="frame"><div class="frame-media"><img src="assets/screenshots/designhub/tasks-desktop-1440.png" alt="Kanban task board" width="1440" height="900" loading="lazy"></div><figcaption><span>Tasks</span><span>Keyboard drag</span></figcaption></figure>
+          <figure class="frame"><div class="frame-media"><img src="assets/screenshots/designhub/dashboard-dark-1440.png" alt="Workspace dashboard in the dark theme" width="1440" height="1000" loading="lazy"></div><figcaption><span>Dark theme</span><span>Same tokens</span></figcaption></figure>
+          <figure class="frame"><div class="frame-media"><img src="assets/screenshots/designhub/design-system-desktop-1440.png" alt="Live design system page" width="1440" height="900" loading="lazy"></div><figcaption><span>Design system</span><span>29 components</span></figcaption></figure>
+          <figure class="frame"><div class="frame-media"><img src="assets/screenshots/designhub/portfolio-desktop-1440.png" alt="Public portfolio page with filters" width="1440" height="900" loading="lazy"></div><figcaption><span>Portfolio</span><span>Working filters</span></figcaption></figure>
+        </div>
+      </article>
+
+      <article class="run" data-reveal>
+        <div class="run-side">
+          <h3>Three pages in 3D</h3>
+          <p>Product pages that move with the scroll: headphones built from code, a laptop scrubbed frame by frame, and a valley from dawn to night.</p>
+          <a class="link" href="projects/aura-showcase.html">AURA One</a>
+          <a class="link" href="projects/vekta-nightfall-16.html">VEKTA Nightfall 16</a>
+          <a class="link" href="projects/interactive-landscape-journey.html">Landscape Journey</a>
+          <p class="run-note">three.js, GSAP ScrollTrigger, Lenis and custom shaders. All three brands are fictional.</p>
+        </div>
+        <div class="run-frames" tabindex="0" aria-label="3D project screenshots">
+          <figure class="frame is-lifted"><div class="frame-media"><video class="loop" src="assets/screenshots/vekta-nightfall/exploded-loop.mp4" poster="assets/screenshots/vekta-nightfall/exploded-poster.jpg" width="1280" height="720" muted loop playsinline autoplay preload="metadata" aria-label="VEKTA laptop coming apart into its layers, the frame sequence the page scrubs on scroll"></video></div><figcaption><span>VEKTA Nightfall 16</span><span>The 115 frames the page scrubs</span></figcaption></figure>
+          <figure class="frame"><div class="frame-media"><img src="assets/screenshots/aura-showcase/exploded.jpg" alt="AURA One headphones separated into parts" width="1440" height="900" loading="lazy"></div><figcaption><span>AURA One</span><span>No model files</span></figcaption></figure>
+          <figure class="frame"><div class="frame-media"><img src="assets/screenshots/aura-showcase/finishes.jpg" alt="AURA One in the Ember finish" width="1440" height="900" loading="lazy"></div><figcaption><span>Finishes</span><span>Four, live</span></figcaption></figure>
+          <figure class="frame"><div class="frame-media"><img src="assets/screenshots/vekta-nightfall/page-keyboard.jpg" alt="VEKTA keyboard colour picker" width="1440" height="900" loading="lazy"></div><figcaption><span>Keyboard</span><span>Recolours the page</span></figcaption></figure>
+          <figure class="frame"><div class="frame-media"><img src="assets/screenshots/landscape-journey/desktop-3-lake.jpg" alt="Procedural lake at golden hour" width="1366" height="768" loading="lazy"></div><figcaption><span>Northwind</span><span>Golden hour</span></figcaption></figure>
+        </div>
+      </article>
+    </section>
+
+    <!-- All work as one run of names -->
+    <section class="index" id="all-work" data-chapter="grey" aria-labelledby="indexTitle">
+      <h2 class="sr-only" id="indexTitle">All fourteen projects</h2>
+      <ul class="names" data-reveal>
+        <li class="names-lead">All work:</li>
+        <li><a href="projects/opsdesk-ai.html">OpsDesk AI<span class="thumb"><img src="assets/screenshots/opsdesk-ai/10-ai-assistant.png" alt="" loading="lazy"></span></a></li>
+        <li><a href="projects/evalforge.html">EvalForge<span class="thumb"><img src="assets/screenshots/evalforge/run-inspector.jpg" alt="" loading="lazy"></span></a></li>
+        <li><a href="projects/designhub.html">DesignHub Studio<span class="thumb"><img src="assets/screenshots/designhub/dashboard-desktop-1440.png" alt="" loading="lazy"></span></a></li>
+        <li><a href="projects/ai-customer-support-ticket-automation.html">Support Ticket Automation<span class="thumb"><img src="assets/screenshots/ai-customer-support/full-workflow-overview.png" alt="" loading="lazy"></span></a></li>
+        <li><a href="projects/aura-showcase.html">AURA One<span class="thumb"><img src="assets/screenshots/aura-showcase/hero.jpg" alt="" loading="lazy"></span></a></li>
+        <li><a href="projects/interactive-landscape-journey.html">Landscape Journey<span class="thumb"><img src="assets/screenshots/landscape-journey/desktop-1-hero.jpg" alt="" loading="lazy"></span></a></li>
+        <li><a href="projects/ai-shop-support-agent.html">Shop Support Agent<span class="thumb"><img src="assets/screenshots/portfolio-projects/ai-shop-support-agent.svg" alt="" loading="lazy"></span></a></li>
+        <li><a href="projects/vekta-nightfall-16.html">VEKTA Nightfall 16<span class="thumb"><img src="assets/screenshots/vekta-nightfall/page-hero.jpg" alt="" loading="lazy"></span></a></li>
+        <li><a href="projects/box-ward.html">The Box Ward<span class="thumb"><img src="assets/screenshots/portfolio-projects/box-ward.svg" alt="" loading="lazy"></span></a></li>
+        <li><a href="projects/ai-receptionist.html">AI Receptionist<span class="thumb"><img src="assets/screenshots/ai-receptionist-workflow.png" alt="" loading="lazy"></span></a></li>
+        <li><a href="projects/order-processing.html">Order Processing<span class="thumb"><img src="assets/screenshots/order-processing/order-intake-execution.png" alt="" loading="lazy"></span></a></li>
+        <li><a href="projects/nexusai-landing-page.html">NexusAI<span class="thumb"><img src="assets/screenshots/nexusai/hero.jpg" alt="" loading="lazy"></span></a></li>
+        <li><a href="projects/authenticated-todo-manager.html">Todo Manager<span class="thumb"><img src="assets/screenshots/portfolio-projects/authenticated-todo.svg" alt="" loading="lazy"></span></a></li>
+        <li><a href="projects/qa-automation-portfolio.html">QA Testing Portfolio<span class="thumb"><img src="assets/screenshots/portfolio-projects/qa-testing.svg" alt="" loading="lazy"></span></a></li>
+      </ul>
+      <p class="names-count" data-reveal>Fourteen projects, each with a case study that lists what was tested and what is still missing.</p>
+    </section>
+
+    <!-- Evidence table -->
+    <section class="evidence" id="evidence" data-chapter="light" aria-labelledby="evidenceTitle">
+      <h2 class="stepped" id="evidenceTitle" data-reveal><span>The evidence,</span><span>counted</span></h2>
+      <table class="proof" data-reveal>
+        <caption class="sr-only">Automated checks recorded in each project's repository</caption>
+        <thead><tr><th scope="col">Project</th><th scope="col">Check</th><th scope="col">Tool</th><th scope="col">Result</th></tr></thead>
+        <tbody>
+          <tr><th scope="row">OpsDesk AI</th><td>API tests</td><td>Node test runner, Supertest</td><td><span data-count="125">125</span> passing</td></tr>
+          <tr><th scope="row"></th><td>End-to-end tests</td><td>Playwright</td><td><span data-count="28">28</span> passing</td></tr>
+          <tr><th scope="row"></th><td>WCAG 2.1 AA scan</td><td>axe</td><td><span data-count="0">0</span> violations</td></tr>
+          <tr><th scope="row"></th><td>Live checks against the model</td><td>Gemini API</td><td><span data-count="11">11</span> passing</td></tr>
+          <tr class="gap" aria-hidden="true"><td colspan="4"></td></tr>
+          <tr><th scope="row">DesignHub</th><td>Browser suites</td><td>Playwright</td><td><span data-count="84">84</span> tests</td></tr>
+          <tr><th scope="row"></th><td>API tests</td><td>node:test, Supertest</td><td><span data-count="20">20</span> tests</td></tr>
+          <tr><th scope="row"></th><td>Defects found by the suites</td><td>Testing report</td><td><span data-count="16">16</span> fixed</td></tr>
+          <tr><th scope="row"></th><td>Accessibility, light and dark</td><td>axe</td><td><span data-count="0">0</span> violations</td></tr>
+          <tr class="gap" aria-hidden="true"><td colspan="4"></td></tr>
+          <tr><th scope="row">QA Portfolio</th><td>UI scenarios, login and cart</td><td>Playwright</td><td><span data-count="8">8</span> cases</td></tr>
+          <tr><th scope="row">Support Automation</th><td>Normal, urgent, duplicate and error paths</td><td>n8n executions</td><td>Screenshots kept</td></tr>
+        </tbody>
+      </table>
+      <p class="table-note" data-reveal>Counts come from each repository's README and testing notes. Nothing here is rounded up.</p>
+    </section>
+
+    <!-- Method: call and response -->
+    <section class="method" id="method" data-chapter="grey" aria-labelledby="methodTitle">
+      <div class="method-col">
+        <h2 class="method-title" id="methodTitle" data-reveal>How a ticket moves</h2>
+
+        <div class="exchange" data-reveal>
+          <p class="exchange-lead">First, a customer writes in.</p>
+          <div class="call" data-ui><p class="mail-subject">Charged twice for order 4471</p><p>Hi, my card was charged twice for the same order yesterday. Can you refund one of them?</p></div>
+          <div class="response"><pre><code>{
+  "category": "billing",
+  "priority": "high",
+  "sentiment": "negative",
+  "needs_human_review": true
+}</code></pre><p class="response-note">The model classifies it into structured fields. Sample message, fields simplified.</p></div>
+        </div>
+
+        <div class="exchange" data-reveal>
+          <p class="exchange-lead">Then, the server checks the model.</p>
+          <div class="call"><pre><code>if (!ALLOWED.priority.includes(out.priority)) {
+  return sendToReview(ticket);
+}
+const team = TEAM_BY_CATEGORY[out.category];</code></pre></div>
+          <figure class="response"><img src="assets/screenshots/ai-customer-support/slack-high-priority-alert.png" alt="Slack alert for a high priority ticket" width="1386" height="556" loading="lazy"><figcaption class="response-note">Routing comes from a fixed map, not the model. High priority posts to Slack.</figcaption></figure>
+        </div>
+
+        <div class="exchange" data-reveal>
+          <p class="exchange-lead">Finally, a person approves the reply.</p>
+          <div class="call" data-ui><p>Hi, thanks for flagging this. I can see two charges for order 4471 and have asked our billing team to refund the duplicate.</p></div>
+          <figure class="response is-wide"><img src="assets/screenshots/ai-customer-support/approval-send-audit-path.png" alt="n8n execution of the approval, send and audit branch" width="1637" height="776" loading="lazy"><figcaption class="response-note">Nothing is sent until a reviewer approves. Every step is written to the audit table.</figcaption></figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- Capabilities poster -->
+    <section class="poster" id="capabilities" data-chapter="dark" aria-labelledby="posterTitle">
+      <h2 class="sr-only" id="posterTitle">What I build with</h2>
+      <ul class="poster-list">
+        <li><span class="poster-word">AI applications</span><span class="poster-fact">Gemini, OpenAI, LangChain, pgvector</span></li>
+        <li><span class="poster-word">Backend APIs</span><span class="poster-fact">Node.js, Express, PostgreSQL, Redis</span></li>
+        <li><span class="poster-word">Automation</span><span class="poster-fact">n8n, webhooks, Gmail, Slack</span></li>
+        <li><span class="poster-word">3D and motion</span><span class="poster-fact">three.js, GSAP, Lenis, GLSL</span></li>
+        <li><span class="poster-word">Quality</span><span class="poster-fact">Playwright, axe, Supertest</span></li>
+      </ul>
+    </section>
+
+    <!-- About -->
+    <section class="about" id="about" data-chapter="light" aria-label="About">
+      <div class="about-row">
+        <dl class="facts" data-reveal>
+          <div><dt>Based in</dt><dd>Philippines, UTC+8</dd></div>
+          <div><dt>Studied</dt><dd>BS Information Technology</dd></div>
+          <div><dt>Looking for</dt><dd>Entry-level roles</dd></div>
+        </dl>
+        <div class="about-copy" data-reveal><p class="about-text">I work from the process outward: find the trigger, shape the data, decide which system owns each step, then test what actually runs.</p><p class="about-more">Lately that means AI with guardrails: retrieval that cites its sources, evaluation runs that can be compared side by side, and approval steps that keep a person in charge of what gets sent. I am looking for a team where that kind of care is normal.</p></div>
+      </div>
+      <div class="about-row">
+        <p class="record-label" data-reveal>Stack</p>
+        <div class="records" data-reveal>
+          <ul>
+            <li><span>Node.js, Express</span><span>OpsDesk, EvalForge</span></li>
+            <li><span>PostgreSQL</span><span>OpsDesk, EvalForge</span></li>
+            <li><span>Redis, BullMQ</span><span>EvalForge</span></li>
+            <li><span>MongoDB</span><span>Order Processing</span></li>
+            <li><span>n8n</span><span>Five projects</span></li>
+            <li><span>Gemini, OpenAI</span><span>OpsDesk, EvalForge</span></li>
+          </ul>
+          <ul>
+            <li><span>React 19</span><span>OpsDesk, DesignHub</span></li>
+            <li><span>Tailwind CSS 4</span><span>OpsDesk, DesignHub</span></li>
+            <li><span>three.js</span><span>AURA, Landscape</span></li>
+            <li><span>GSAP</span><span>VEKTA, Landscape</span></li>
+            <li><span>Playwright</span><span>Three projects</span></li>
+            <li><span>Docker</span><span>OpsDesk, EvalForge</span></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="contact" id="contact" data-chapter="blue" aria-label="Contact">
+      <ul class="contact-rows">
+        <li data-reveal><span>Ezekeil Third Cruz</span></li>
+        <li data-reveal><a href="mailto:ezekielcruz0917@gmail.com?subject=Hello%20Ezekeil">ezekielcruz0917@gmail.com</a></li>
+        <li data-reveal><a href="https://github.com/Kerd3" target="_blank" rel="noopener">github.com/Kerd3</a></li>
+        <li data-reveal><a href="https://www.linkedin.com/in/ezekeil-third-cruz-56760726a/" target="_blank" rel="noopener">LinkedIn</a></li>
+        <li data-reveal><span>Philippines, replies within a day</span></li>
+        <li class="greeting" data-reveal><span>Hello</span><a class="arrow-button" href="mailto:ezekielcruz0917@gmail.com?subject=Hello%20Ezekeil" aria-label="Write an email to Ezekeil"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></li>
+      </ul>
+    </section>
+  </main>
+
+  <footer class="footer" data-chapter="dark">
+    <div class="footer-top">
+      <div>
+        <h2 class="invite"><span>Let's build</span> <span>the next one</span></h2>
+        <a class="button" href="mailto:ezekielcruz0917@gmail.com?subject=A%20workflow%20worth%20testing">Email me</a>
+      </div>
+      <ul class="footer-links">
+        <li><a href="https://github.com/Kerd3" target="_blank" rel="noopener">GitHub</a></li>
+        <li><a href="https://www.linkedin.com/in/ezekeil-third-cruz-56760726a/" target="_blank" rel="noopener">LinkedIn</a></li>
+        <li><a href="mailto:ezekielcruz0917@gmail.com">Email</a></li>
+        <li><a href="#top">Back to top</a></li>
+      </ul>
+    </div>
+    <div class="footer-legal"><span>© 2026 Ezekeil Third Cruz</span><span>Written by hand in HTML, CSS and JavaScript</span></div>
+    <p class="footer-name" aria-hidden="true">Ezekeil</p>
+  </footer>
+</body>
+</html>

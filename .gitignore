@@ -1,0 +1,12 @@
+# Vercel CLI link folder
+.vercel
+
+# Local tooling output
+.taste-skill
+.playwright-mcp
+
+# OS and editor files
+.DS_Store
+Thumbs.db
+desktop.ini
+.vscode

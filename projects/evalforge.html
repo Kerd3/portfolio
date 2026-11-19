@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="EvalForge case study by Ezekeil Third Cruz. A Node.js and Express AI evaluation platform using PostgreSQL, Redis, BullMQ, and model adapters.">
+  <meta name="theme-color" content="#ffffff">
+  <title>EvalForge AI Reliability Platform | Ezekeil Third Cruz</title>
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml"><meta property="og:type" content="website"><meta property="og:site_name" content="Ezekeil Third Cruz"><meta property="og:title" content="EvalForge AI Reliability Platform | Ezekeil Third Cruz"><meta property="og:description" content="EvalForge case study by Ezekeil Third Cruz. A Node.js and Express AI evaluation platform using PostgreSQL, Redis, BullMQ, and model adapters."><meta property="og:image" content="/assets/social-preview.jpg"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><meta name="twitter:card" content="summary_large_image"><script>document.documentElement.classList.add('js')</script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Anton:wght@400&family=Work+Sans:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/style.css">
+  <script src="../js/main.js" defer></script>
+</head>
+<body class="project-page">
+  
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="i-arrow-up-right" viewBox="0 0 24 24"><path d="M7 17 17 7M7 7h10v10"/></symbol>
+  <symbol id="i-arrow-right" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></symbol>
+  <symbol id="i-arrow-left" viewBox="0 0 24 24"><path d="M19 12H5M11 18l-6-6 6-6"/></symbol>
+  <symbol id="i-arrow-down" viewBox="0 0 24 24"><path d="M12 5v14M6 13l6 6 6-6"/></symbol>
+  <symbol id="i-chevron-left" viewBox="0 0 24 24"><path d="m15 18-6-6 6-6"/></symbol>
+  <symbol id="i-chevron-right" viewBox="0 0 24 24"><path d="m9 18 6-6-6-6"/></symbol>
+  <symbol id="i-x" viewBox="0 0 24 24"><path d="M18 6 6 18M6 6l12 12"/></symbol>
+  <symbol id="i-github" viewBox="0 0 24 24"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"/><path d="M9 18c-4.51 2-5-2-7-2"/></symbol>
+</svg>
+<a class="skip-link" href="#main">Skip to content</a>
+<header class="site-header" id="siteHeader">
+  <a class="wordmark" href="../index.html">Ezekeil Third Cruz</a>
+  <nav class="nav" aria-label="Primary"><a href="../index.html#work">Work</a><a href="../index.html#evidence">Evidence</a><a href="../index.html#method">Method</a><a href="../index.html#about">About</a></nav>
+  <a class="button" href="mailto:ezekielcruz0917@gmail.com?subject=Hello%20Ezekeil">Email me</a>
+  <button class="menu-button" id="menuButton" type="button" aria-expanded="false" aria-controls="menuPanel">Menu</button>
+  <nav class="menu-panel" id="menuPanel" aria-label="Mobile"><a href="../index.html#work">Work</a><a href="../index.html#evidence">Evidence</a><a href="../index.html#method">Method</a><a href="../index.html#about">About</a><a href="../index.html#contact">Contact</a></nav>
+</header>
+
+  <main id="main" class="wrap">
+    <section class="project-hero">
+      <a class="project-back" href="../index.html#work"><svg class="icon"><use href="#i-arrow-left"/></svg>All projects</a>
+      <p class="project-kicker">BACKEND ENGINEERING / AI EVALUATION</p>
+      <h1>EvalForge AI Reliability Platform</h1>
+      <p class="project-intro">EvalForge is a backend-focused platform for testing model behavior, detecting regressions, and measuring run-to-run consistency. It accepts evaluation requests through an Express API, processes jobs in a Redis and BullMQ worker, runs cases against model providers, grades the responses, and stores results for inspection and comparison.</p>
+      <div class="project-tags"><span class="project-tag">Node.js</span><span class="project-tag">Express</span><span class="project-tag">JavaScript</span><span class="project-tag">PostgreSQL</span><span class="project-tag">Redis</span><span class="project-tag">BullMQ</span><span class="project-tag">Docker</span><span class="project-tag">Gemini / OpenAI</span></div>
+      <div class="project-actions"><a class="btn btn-primary" href="https://github.com/Kerd3/EvalForge" target="_blank" rel="noopener">Open GitHub repository<svg class="icon"><use href="#i-arrow-up-right"/></svg></a><a class="btn btn-ghost" href="#evidence">View screenshots<svg class="icon"><use href="#i-arrow-down"/></svg></a></div>
+    </section>
+
+    <div class="project-layout">
+      <aside class="project-toc">
+        <div class="project-toc-title">CASE STUDY</div>
+        <a href="#problem">Problem</a><a href="#solution">Solution</a><a href="#architecture">Architecture</a><a href="#workflow">Evaluation flow</a><a href="#grading">Grading</a><a href="#observability">Observability</a><a href="#validation">Validation</a><a href="#limits">Scope &amp; limits</a><a href="#evidence">Evidence</a>
+      </aside>
+      <article>
+        <section id="problem" class="case-section">
+          <p class="project-kicker">01 / PROBLEM</p>
+          <h2>Repeatable checks, not one good demo.</h2>
+          <p>AI responses can vary between runs, providers, and model versions. A single successful response does not show whether behavior is consistent or whether a change caused a regression. EvalForge was built to make evaluation runs inspectable and repeatable by keeping datasets, graders, outputs, and run results together.</p>
+        </section>
+
+        <section id="solution" class="case-section">
+          <p class="project-kicker">02 / SOLUTION</p>
+          <h2>Saved runs and per-case results.</h2>
+          <p>The platform accepts versioned JSON datasets, queues evaluation work, calls a selected provider adapter, grades each response, and records the result and execution details. The dashboard provides recent-run pagination, dataset management, a run inspector, run comparison, and reliability reporting.</p>
+          <div class="case-meta"><span>Dataset versions</span><span>Async evaluation jobs</span><span>Rule-based graders</span><span>Run comparison</span><span>Reliability campaigns</span></div>
+          <table>
+            <thead><tr><th>Component</th><th>Responsibility</th><th>Implementation</th></tr></thead>
+            <tbody>
+              <tr><td>API</td><td>Accepts dataset and evaluation requests, returns run identifiers, and serves reports.</td><td>Node.js / Express</td></tr>
+              <tr><td>Data store</td><td>Persists datasets, versions, runs, per-case outcomes, and traces.</td><td>PostgreSQL</td></tr>
+              <tr><td>Queue</td><td>Moves evaluation work outside the request-response cycle.</td><td>Redis / BullMQ</td></tr>
+              <tr><td>Worker</td><td>Executes queued evaluation cases and records completion or error states.</td><td>Node.js worker</td></tr>
+              <tr><td>Provider adapters</td><td>Connects to deterministic mock responses and live model providers.</td><td>Mock, Gemini, OpenAI</td></tr>
+              <tr><td>Dashboard</td><td>Displays recent runs, datasets, graded cases, model details, and reliability summaries.</td><td>Web interface</td></tr>
+            </tbody>
+          </table>
+        </section>
+
+        <section id="architecture" class="case-section">
+          <p class="project-kicker">03 / ARCHITECTURE</p>
+          <h2>Runs in the background, API stays fast.</h2>
+          <p>The API creates and tracks work. Redis and BullMQ hold queued jobs, and a separate worker processes the evaluation. PostgreSQL stores the data needed to inspect what was tested and how each case finished.</p>
+          <figure class="evidence-item wide">
+            <img src="../assets/screenshots/evalforge-architecture.svg" alt="EvalForge architecture diagram showing the dashboard, Express API, PostgreSQL, Redis and BullMQ worker, model providers, graders, and saved results" loading="lazy">
+            <figcaption><strong>Architecture overview.</strong> A simplified view of the components documented in the project README and Docker Compose setup.</figcaption>
+          </figure>
+          <div class="architecture">
+            <div class="arch-step"><strong>01</strong><span>Dashboard<small>Creates runs and inspects results</small></span></div>
+            <div class="arch-step"><strong>02</strong><span>Express API<small>Validates requests and queues work</small></span></div>
+            <div class="arch-step"><strong>03</strong><span>Redis + BullMQ<small>Holds background evaluation jobs</small></span></div>
+            <div class="arch-step"><strong>04</strong><span>Worker<small>Calls providers and runs graders</small></span></div>
+            <div class="arch-step"><strong>05</strong><span>PostgreSQL<small>Stores cases, traces, and reports</small></span></div>
+          </div>
+        </section>
+
+        <section id="workflow" class="case-section">
+          <p class="project-kicker">04 / EVALUATION FLOW</p>
+          <h2>From dataset to inspectable report.</h2>
+          <ol class="case-steps">
+            <li><strong>Prepare a dataset:</strong> create or import JSON test cases, then save edits as a new immutable dataset version.</li>
+            <li><strong>Queue a run:</strong> submit an evaluation request. The API returns a run identifier while background processing continues.</li>
+            <li><strong>Call a provider:</strong> the worker executes cases using the Mock provider, Google Gemini, or OpenAI adapter.</li>
+            <li><strong>Grade the response:</strong> configured graders check output behavior and capture tool/function call proposals without executing them.</li>
+            <li><strong>Persist each case:</strong> store pass/fail/error status, response details, traces, actual model information, latency, and token usage when available.</li>
+            <li><strong>Inspect and compare:</strong> review the run, compare it with another run, or start a repeated-run reliability campaign.</li>
+          </ol>
+        </section>
+
+        <section id="grading" class="case-section">
+          <p class="project-kicker">05 / GRADING</p>
+          <h2>Explicit graders, visible criteria.</h2>
+          <p>The project includes rule-based graders for non-empty output, required and forbidden keywords, exact-match and expected-output phrases, valid JSON, context-aware abstention, and required or forbidden tool calls. An optional LLM-as-judge can apply a rubric, but its output is treated as a model-generated assessment that needs calibration, not as ground truth.</p>
+          <div class="case-grid">
+            <div class="case-box"><h3>Deterministic checks</h3><p>Keyword, exact-match, JSON, and tool-call checks produce inspectable pass or fail results.</p></div>
+            <div class="case-box"><h3>Context-aware checks</h3><p>Abstention checks can verify whether the assistant avoids answering when the supplied context is insufficient.</p></div>
+            <div class="case-box"><h3>Optional judge</h3><p>An LLM judge can score against a rubric, with the limitation that judge results are not ground truth.</p></div>
+            <div class="case-box"><h3>Captured traces</h3><p>Tool/function call proposals are recorded for assessment. EvalForge does not execute those calls.</p></div>
+          </div>
+        </section>
+
+        <section id="observability" class="case-section">
+          <p class="project-kicker">06 / OBSERVABILITY</p>
+          <h2>Record what actually happened during a run.</h2>
+          <p>EvalForge separates the requested model from the model that actually responded. This matters when a provider fallback is used. Run details include fallback reasons, provider errors, latency, token counts, and cost estimates based on configured rates. Cost figures are estimates from recorded usage and project configuration, not billing statements.</p>
+          <div class="result-grid">
+            <div><strong>Model identity</strong><span>Requested model and actual responding model are tracked separately.</span></div>
+            <div><strong>Fallback visibility</strong><span>Per-case fallback reasons are recorded so a run is not misread as a single-model benchmark.</span></div>
+            <div><strong>Latency and tokens</strong><span>Run and case details include timing and token usage when returned by the provider.</span></div>
+            <div><strong>Cost estimate</strong><span>Configured per-model rates are used, with missing or incomplete rates reported instead of guessed.</span></div>
+          </div>
+        </section>
+
+        <section id="validation" class="case-section">
+          <p class="project-kicker">07 / VALIDATION</p>
+          <h2>Tested with suites and a live dataset.</h2>
+          <p>The repository README records the following validation snapshot from project development. The figures describe the listed test suite and the specific Policy Grounding dataset, not a general guarantee that a model will always be correct.</p>
+          <div class="result-grid">
+            <div><strong>69 tests passed</strong><span>Automated tests across 9 files.</span></div>
+            <div><strong>12 / 12 passed</strong><span>Live Policy Grounding evaluation using gemini-3.1-flash-lite in a single-model run.</span></div>
+            <div><strong>3 of 3 repeats</strong><span>Reliability campaign recorded 100% on the same 12-case dataset.</span></div>
+            <div><strong>0 run-to-run std. dev.</strong><span>Observed across those three repeated runs on this dataset.</span></div>
+          </div>
+          <div class="evidence-callout"><p><strong>How to read these results:</strong> Policy Grounding uses a synthetic demonstration policy. The dataset is small, and three repetitions are an encouraging smoke test, not a large statistical sample. Cases and graders should be reviewed before adapting the setup to an organization's real policies.</p></div>
+        </section>
+
+        <section id="limits" class="case-section">
+          <p class="project-kicker">08 / SCOPE &amp; LIMITATIONS</p>
+          <h2>A portfolio MVP on solid foundations.</h2>
+          <p>EvalForge demonstrates backend patterns such as asynchronous job processing, persistence, dataset versioning, provider adapters, trace capture, and automated regression checks. It is not presented as a hardened public multi-tenant service.</p>
+          <div class="challenge-grid">
+            <div class="challenge-card"><span class="mono">01</span><h3>Access control is not implemented</h3><p>Authentication, per-user permissions, run ownership, and multi-tenant isolation are not implemented. Do not expose an unprotected instance with real user data or secrets.</p></div>
+            <div class="challenge-card"><span class="mono">02</span><h3>Live model output can vary</h3><p>Graders need representative cases and careful calibration. Fallback may also produce mixed-model runs that should not be treated as a strict single-model benchmark.</p></div>
+            <div class="challenge-card"><span class="mono">03</span><h3>Judge results need review</h3><p>The optional LLM judge can be wrong and should be checked against labeled examples before its scores are relied on.</p></div>
+            <div class="challenge-card"><span class="mono">04</span><h3>Evaluation is not deployment proof</h3><p>Small datasets and few repetitions provide limited evidence. Broader datasets and operational hardening remain future work.</p></div>
+          </div>
+        </section>
+
+        <section id="evidence" class="case-section">
+          <p class="project-kicker">09 / EVIDENCE</p>
+          <h2>Inspect the dashboard and run-level views.</h2>
+          <p>These screenshots are embedded from the public EvalForge repository. Open the repository for the full project source, setup instructions, automated test workflow, and validation notes. The image files are stored in the repository under docs/screenshots.</p>
+          <p><a href="https://github.com/Kerd3/EvalForge/tree/main/docs/screenshots" target="_blank" rel="noopener">Open the screenshot files in GitHub<svg class="icon"><use href="#i-arrow-up-right"/></svg></a></p>
+          <div class="evidence-gallery">
+            <figure class="evidence-item wide"><img src="../assets/screenshots/evalforge/dashboard-overview.jpg" alt="EvalForge dashboard overview" loading="lazy"><figcaption><strong>Dashboard overview.</strong> Recent activity and evaluation workspace.</figcaption></figure>
+            <figure class="evidence-item"><img src="../assets/screenshots/evalforge/datasets.jpg" alt="EvalForge dataset management screen" loading="lazy"><figcaption><strong>Dataset management.</strong> Create and manage evaluation datasets.</figcaption></figure>
+            <figure class="evidence-item"><img src="../assets/screenshots/evalforge/activity-inspector.jpg" alt="EvalForge activity pagination and run inspector" loading="lazy"><figcaption><strong>Activity and run inspector.</strong> Browse runs and inspect recorded case results.</figcaption></figure>
+            <figure class="evidence-item wide"><img src="../assets/screenshots/evalforge/run-inspector.jpg" alt="EvalForge run inspector showing model-level reporting and graded results" loading="lazy"><figcaption><strong>Run inspector.</strong> Model-level reporting and graded evaluation results.</figcaption></figure>
+          </div>
+        </section>
+
+        <section class="case-section">
+          <p class="project-kicker">10 / REPOSITORY</p>
+          <h2>Explore the implementation.</h2>
+          <p>The public repository includes the Express API, worker, database migrations, Docker Compose setup, dashboard, automated tests, screenshots, and project documentation.</p>
+          <div class="project-actions"><a class="btn btn-solid" href="https://github.com/Kerd3/EvalForge" target="_blank" rel="noopener">Open EvalForge on GitHub<svg class="icon"><use href="#i-arrow-up-right"/></svg></a><a class="btn btn-outline" href="../index.html#work">Back to projects</a><a class="btn btn-outline" href="ai-customer-support-ticket-automation.html">Next: Customer Support →</a></div>
+        </section>
+      <a class="next-project" href="designhub.html"><div><span>Next project</span><strong>DesignHub Studio</strong></div><svg class="icon"><use href="#i-arrow-right"/></svg></a></article>
+    </div>
+  </main>
+
+  <footer class="footer" data-chapter="dark">
+  <div class="footer-top">
+    <div>
+      <h2 class="invite"><span>Let's build</span> <span>the next one</span></h2>
+      <a class="button" href="mailto:ezekielcruz0917@gmail.com?subject=Hello%20Ezekeil">Email me</a>
+    </div>
+    <ul class="footer-links">
+      <li><a href="../index.html#work">All projects</a></li>
+      <li><a href="https://github.com/Kerd3" target="_blank" rel="noopener">GitHub</a></li>
+      <li><a href="https://www.linkedin.com/in/ezekeil-third-cruz-56760726a/" target="_blank" rel="noopener">LinkedIn</a></li>
+      <li><a href="#main">Back to top</a></li>
+    </ul>
+  </div>
+  <div class="footer-legal"><span>© 2026 Ezekeil Third Cruz</span><span>Case study written from the repository and captured evidence</span></div>
+  <p class="footer-name" aria-hidden="true">Ezekeil</p>
+</footer>
+  <div class="lightbox" id="lightbox" aria-hidden="true" role="dialog" aria-modal="true" aria-label="Screenshot viewer"><button class="lightbox-close" id="lightboxClose" type="button" aria-label="Close viewer"><svg class="icon icon-lg"><use href="#i-x"/></svg></button><button class="lightbox-prev" id="lightboxPrev" type="button" aria-label="Previous screenshot"><svg class="icon icon-lg"><use href="#i-chevron-left"/></svg></button><img id="lightboxImage" alt="Project screenshot"><div class="lightbox-count" id="lightboxCount"></div><div class="lightbox-caption" id="lightboxCaption"></div><button class="lightbox-next" id="lightboxNext" type="button" aria-label="Next screenshot"><svg class="icon icon-lg"><use href="#i-chevron-right"/></svg></button></div>
+</body>
+</html>
