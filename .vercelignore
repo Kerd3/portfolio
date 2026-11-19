@@ -3,3 +3,7 @@
 .taste-skill
 .playwright-mcp
 README.md
+
+# Local secrets and Vercel link data
+.env*
+.vercel
